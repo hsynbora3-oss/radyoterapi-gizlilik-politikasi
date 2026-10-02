@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Gizlilik Politikası — Radyoterapi Klinik Takip</title>
+<style>
+  :root {
+    --bg: #eef3f3;
+    --card: #ffffff;
+    --text: #12302d;
+    --muted: #4b625f;
+    --accent: #0f6e6a;
+    --border: #dbe6e5;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1716;
+      --card: #16201f;
+      --text: #e7efee;
+      --muted: #9fb3b0;
+      --accent: #38a39d;
+      --border: #26332f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1716;
+    --card: #16201f;
+    --text: #e7efee;
+    --muted: #9fb3b0;
+    --accent: #38a39d;
+    --border: #26332f;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  header {
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin-bottom: 18px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--accent);
+  }
+  p, li { font-size: 0.97rem; color: var(--text); }
+  ul { margin: 8px 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  .pill {
+    display: inline-block;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px 12px;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.93rem; margin-top: 6px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; width: 38%; }
+  footer { text-align: center; color: var(--muted); font-size: 0.82rem; margin-top: 30px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="pill">Gizlilik Politikası</span>
+      <h1>Radyoterapi Klinik Takip — Gizlilik Politikası</h1>
+      <div class="updated">Son güncelleme: Ekim 2026</div>
+    </header>
+
+    <div class="card">
+      <h2>1. Bu uygulama nedir, bu politika kimi kapsar</h2>
+      <p>
+        "Radyoterapi Klinik Takip", radyoterapi merkezlerinde çalışan personelin
+        (sekreter, doktor, medikal fizik uzmanı, tedavi teknisyeni, hemşire) ve
+        tedavi gören hastaların, tedavi sürecini (randevular, cihaz atamaları,
+        tedavi aşaması) takip edebilmesi için hazırlanmış bir iş akışı (workflow)
+        uygulamasıdır. Bu politika, uygulamayı kullanan personel ve hastalar için
+        geçerlidir.
+      </p>
+      <p>
+        <strong>Önemli:</strong> Bu uygulama resmi bir tıbbi kayıt sistemi değildir
+        ve yerine geçmez; kliniğinizin resmi hastane bilgi sistemi/dosyası her
+        zaman olduğu gibi asıl kayıt olmaya devam eder. Bu uygulama, tedavi
+        sürecine kolaylık sağlayan tamamlayıcı bir araçtır.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Hangi veriler toplanıyor</h2>
+      <table>
+        <tr><th>Personel verisi</th><td>Ad soyad, unvan, sicil numarası, e-posta, rol (ör. doktor, hemşire), çalıştığı merkez ve cihaz bilgisi.</td></tr>
+        <tr><th>Hasta verisi</th><td>Ad soyad, dosya numarası, doğum tarihi, şehir, tanı/tedavi bölgesi notu, tedavi cihazı, seans/fraksiyon sayısı ve ilerlemesi, randevu tarih-saatleri, klinik uyarı etiketleri (ör. alerji, eşlik eden tedavi bilgisi).</td></tr>
+        <tr><th>Teknik veri</th><td>Bildirim gönderebilmek için cihaza özel push bildirim anahtarı (token). Başka bir cihaz/konum/kullanım verisi toplanmaz.</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>3. Veriler ne amaçla kullanılıyor</h2>
+      <ul>
+        <li>Hastanın tedavi sürecinin (simülasyon → planlama → tedavi) ilgili personel arasında koordineli şekilde takip edilmesi,</li>
+        <li>Randevuların planlanması ve hatırlatılması,</li>
+        <li>Cihaz arızası/bakımı gibi durumlarda ilgili personel ve hastaların bilgilendirilmesi,</li>
+        <li>Personel hesaplarının yönetimi ve yetkilendirilmesi.</li>
+      </ul>
+      <p>Veriler reklam, pazarlama veya ticari profil oluşturma amacıyla <strong>kullanılmaz</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Veriler kimlerle paylaşılıyor</h2>
+      <p>
+        Veriler <strong>üçüncü taraflarla paylaşılmaz veya satılmaz.</strong>
+        Bir kullanıcı, yalnızca kendi çalıştığı merkeze ait verileri görebilir —
+        farklı bir merkezin verilerine erişimi yoktur (erişim kontrolü veritabanı
+        seviyesinde zorunlu kılınır). Hastalar yalnızca kendi kayıtlarını
+        görebilir.
+      </p>
+      <p>
+        Veriler, uygulamanın altyapısını sağlayan bulut veritabanı hizmeti
+        (Supabase) üzerinde barındırılır; bu sağlayıcı yalnızca teknik barındırma
+        hizmeti verir, veriyi kendi amaçları için kullanmaz.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Verilerin saklanma ve silinme süresi</h2>
+      <ul>
+        <li>Bir hastanın tedavisi <strong>"Tamamlandı"</strong> olarak işaretlendikten sonra, kayıt üzerinde yaklaşık <strong>1 hafta</strong> boyunca herhangi bir işlem yapılmazsa, ilgili doktor(lar) önceden uyarılır ve ardından hasta kaydı sistemden <strong>kalıcı olarak silinir.</strong></li>
+        <li>Personel hesapları, hesap aktif olduğu sürece saklanır; personel kendi hesabını silebilir ya da merkez yöneticisinden silinmesini talep edebilir.</li>
+        <li>Bir merkezin tüm verilerinin silinmesi istenirse, merkez yöneticisi bu talebi iletebilir.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. Veri güvenliği</h2>
+      <ul>
+        <li>Tüm veri iletimi şifrelenmiş bağlantı (HTTPS) üzerinden yapılır.</li>
+        <li>Erişim, kullanıcı girişi (e-posta/şifre) ve satır bazlı erişim kuralları (yalnızca kendi merkezini görme) ile sınırlandırılmıştır.</li>
+        <li>Hassas kimlik/finansal bilgiler (ör. kimlik numarası, kart bilgisi) uygulama tarafından hiçbir zaman istenmez veya saklanmaz.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>7. Haklarınız</h2>
+      <p>
+        Kendinize ait verilerin görüntülenmesini, düzeltilmesini veya silinmesini
+        talep etme hakkına sahipsiniz. Hastalar için bu talepler, tedavi
+        gördükleri merkez üzerinden iletilebilir; personel kendi talebini
+        doğrudan aşağıdaki iletişim adresinden iletebilir.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. Çocuklara ait veriler</h2>
+      <p>
+        Radyoterapi tedavisi bazen reşit olmayan hastaları da kapsayabilir. Bu
+        durumda hastaya ait verilerin işlenmesi, kliniğin kendi onam/rıza
+        süreciyle (veli/vasi onayı dahil) birlikte yürütülür; uygulama ayrıca
+        bağımsız bir çocuk hesabı oluşturmaz veya reşit olmayanlardan doğrudan
+        veri talep etmez.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. Bu politikadaki değişiklikler</h2>
+      <p>
+        Bu politika zaman zaman güncellenebilir. Önemli değişikliklerde,
+        uygulama üzerinden personel ve hastalara bilgi verilir. Güncel sürüm her
+        zaman bu sayfada yayınlanır.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>10. İletişim</h2>
+      <p>
+        Bu gizlilik politikası veya verilerinizle ilgili sorularınız için:
+        <br /><strong><a href="mailto:hsyn.bora3@gmail.com">hsyn.bora3@gmail.com</a></strong>
+      </p>
+    </div>
+
+    <footer>
+      Radyoterapi Klinik Takip — Gizlilik Politikası
+    </footer>
+  </div>
+</body>
+</html>
