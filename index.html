@@ -100,7 +100,7 @@
     <header>
       <span class="pill">Gizlilik Politikası</span>
       <h1>Radyoterapi Klinik Takip — Gizlilik Politikası</h1>
-      <div class="updated">Son güncelleme: Ekim 2026</div>
+      <div class="updated">Son güncelleme: Ekim 2026 (hasta bildirimleri ve uygulama içi onam eklendi)</div>
     </header>
 
     <div class="card">
@@ -125,8 +125,8 @@
       <h2>2. Hangi veriler toplanıyor</h2>
       <table>
         <tr><th>Personel verisi</th><td>Ad soyad, unvan, sicil numarası, e-posta, rol (ör. doktor, hemşire), çalıştığı merkez ve cihaz bilgisi.</td></tr>
-        <tr><th>Hasta verisi</th><td>Ad soyad, dosya numarası, doğum tarihi, şehir, tanı/tedavi bölgesi notu, tedavi cihazı, seans/fraksiyon sayısı ve ilerlemesi, randevu tarih-saatleri, klinik uyarı etiketleri (ör. alerji, eşlik eden tedavi bilgisi).</td></tr>
-        <tr><th>Teknik veri</th><td>Bildirim gönderebilmek için cihaza özel push bildirim anahtarı (token). Başka bir cihaz/konum/kullanım verisi toplanmaz.</td></tr>
+        <tr><th>Hasta verisi</th><td>Ad soyad, dosya numarası, doğum tarihi, şehir, tanı/tedavi bölgesi notu, tedavi cihazı, seans/fraksiyon sayısı ve ilerlemesi, randevu tarih-saatleri, klinik uyarı etiketleri (ör. alerji, eşlik eden tedavi bilgisi). Hasta, uygulamayı kullanmayı kabul ettiğinde, bu onamın tarihi ve hangi metin sürümü olduğu da kaydedilir.</td></tr>
+        <tr><th>Teknik veri</th><td>Bildirim gönderebilmek için cihaza özel push bildirim anahtarı (token); hem personel hem (bildirim izni verirlerse) hastalar için. Başka bir cihaz/konum/kullanım verisi toplanmaz.</td></tr>
       </table>
     </div>
 
@@ -135,7 +135,7 @@
       <ul>
         <li>Hastanın tedavi sürecinin (simülasyon → planlama → tedavi) ilgili personel arasında koordineli şekilde takip edilmesi,</li>
         <li>Randevuların planlanması ve hatırlatılması,</li>
-        <li>Cihaz arızası/bakımı gibi durumlarda ilgili personel ve hastaların bilgilendirilmesi,</li>
+        <li>Cihaz arızası/bakımı gibi durumlarda ilgili personel ve o cihazda tedavi gören hastaların bilgilendirilmesi (bildirim metinleri kişisel bilgi içermez),</li>
         <li>Personel hesaplarının yönetimi ve yetkilendirilmesi.</li>
       </ul>
       <p>Veriler reklam, pazarlama veya ticari profil oluşturma amacıyla <strong>kullanılmaz</strong>.</p>
@@ -161,6 +161,7 @@
       <h2>5. Verilerin saklanma ve silinme süresi</h2>
       <ul>
         <li>Bir hastanın tedavisi <strong>"Tamamlandı"</strong> olarak işaretlendikten sonra, kayıt üzerinde yaklaşık <strong>1 hafta</strong> boyunca herhangi bir işlem yapılmazsa, ilgili doktor(lar) önceden uyarılır ve ardından hasta kaydı sistemden <strong>kalıcı olarak silinir.</strong></li>
+        <li>Hastaya ait bildirim anahtarı ve onam kaydı, hasta kaydıyla birlikte silinir. Hasta çıkış yaptığında bildirim anahtarı ayrıca hemen silinir.</li>
         <li>Personel hesapları, hesap aktif olduğu sürece saklanır; personel kendi hesabını silebilir ya da merkez yöneticisinden silinmesini talep edebilir.</li>
         <li>Bir merkezin tüm verilerinin silinmesi istenirse, merkez yöneticisi bu talebi iletebilir.</li>
       </ul>
